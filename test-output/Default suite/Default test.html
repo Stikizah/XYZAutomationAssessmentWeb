@@ -1,0 +1,454 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>53/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 23 16:58:52 SAST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>116 seconds (116693 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , GETTEXT, //*[@id="anchor1"], xpath, </td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;anchor1&quot;]&quot;}
+  (Session info: chrome=88.0.4324.182)
+  (Driver info: chromedriver=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;DESKTOP-2JKDASI&apos;, ip: &apos;192.168.8.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64782}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir8084_1422187921}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=88.0.4324.182, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: ba9909e0fd9be0ac7378871dfa0659f1
+*** Element info: {Using=xpath, value=//*[@id=&quot;anchor1&quot;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at operation.UIOperation.perform(UIOperation.java:88)
+	at testCases.HybridExecuteTest.testLogin(HybridExecuteTest.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1887123617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1887123617'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;anchor1&quot;]&quot;}
+  (Session info: chrome=88.0.4324.182)
+  (Driver info: chromedriver=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;DESKTOP-2JKDASI&apos;, ip: &apos;192.168.8.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64782}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir8084_1422187921}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=88.0.4324.182, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: ba9909e0fd9be0ac7378871dfa0659f1
+*** Element info: {Using=xpath, value=//*[@id=&quot;anchor1&quot;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at operation.UIOperation.perform(UIOperation.java:88)
+	at testCases.HybridExecuteTest.testLogin(HybridExecuteTest.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: Validate the of 1500 Deposit Was successful, , , , </td>
+<td></td>
+<td>10</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login</td>
+<td></td>
+<td>6</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[text()='Customer Login'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , WAITFORELEMENT, //strong, xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@name= 'userSelect'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //button[@type='submit'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@ng-class = 'btnClass2'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , SETTEXT, //input[@type='number'], xpath, 1500</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@class = 'btn btn-default'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@class='btn logout'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: Validate the of 1500 Deposit Was successful, , , , </td>
+<td></td>
+<td>7</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login</td>
+<td></td>
+<td>9</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[text()='Customer Login'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , WAITFORELEMENT, //strong, xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@name= 'userSelect'], xpath, </td>
+<td></td>
+<td>2</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //button[@type='submit'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@ng-class = 'btnClass2'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :</td>
+<td></td>
+<td>2</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , SETTEXT, //input[@type='number'], xpath, 1500</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@class = 'btn btn-default'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@class='btn logout'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: Validate the Transaction appears, , , , </td>
+<td></td>
+<td>7</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login</td>
+<td></td>
+<td>12</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[text()='Customer Login'], xpath, </td>
+<td></td>
+<td>1</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , WAITFORELEMENT, //strong, xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@name= 'userSelect'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //button[@type='submit'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@ng-class = 'btnClass2'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , SETTEXT, //input[@type='number'], xpath, 31459</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@class = 'btn btn-default'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //div[3]/button, xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , VALIDATEANDCOMPARE, //tr[@id='anchor0']/td[3], xpath, Debit</td>
+<td></td>
+<td>3</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //div[2]/div/div/button, xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , WAITFORELEMENT, //button[3], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //button[3], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , VALIDATEANDCOMPARE, //*[text() = 'Amount to be Withdrawn :'], xpath, Amount to be Deposited :</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , SETTEXT, //input[@type='number'], xpath, 31459</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@class='btn btn-default'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , VALIDATEANDCOMPARE, //*[@ng-show = 'message'], xpath, Transaction successful</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@ng-click='transactions()'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , SETTEXT, //*[@ng-model="startDate"], xpath, 2021-02-23T15:57:00</td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+<tr>
+<td title='testCases.HybridExecuteTest.testLogin()'><b>testLogin</b><br>Test class: testCases.HybridExecuteTest<br>Parameters: , CLICK, //*[@class='btn logout'], xpath, </td>
+<td></td>
+<td>0</td>
+<td>testCases.HybridExecuteTest@4eed2acf</td></tr>
+</table><p>
+</body>
+</html>

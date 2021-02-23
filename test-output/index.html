@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1037719964\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">54 methods, 1 failed,   53 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, GETTEXT, //*[@id=&quot;anchor1&quot;], xpath, )">testLogin(, GETTEXT, //*[@id="anchor1"], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">testLogin(, CLICK, //*[@ng-class = 'btnClass2'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)">testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, VALIDATEANDCOMPARE, //*[@ng-show = &#039;message&#039;], xpath, Transaction successful)">testLogin(, VALIDATEANDCOMPARE, //*[@ng-show = 'message'], xpath, Transaction successful)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)">testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //button[@type=&#039;submit&#039;], xpath, )">testLogin(, CLICK, //button[@type='submit'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, SETTEXT, //input[@type=&#039;number&#039;], xpath, 31459)">testLogin(, SETTEXT, //input[@type='number'], xpath, 31459)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, SETTEXT, //input[@type=&#039;number&#039;], xpath, 1500)">testLogin(, SETTEXT, //input[@type='number'], xpath, 1500)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@class = &#039;btn btn-default&#039;], xpath, )">testLogin(, CLICK, //*[@class = 'btn btn-default'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //button[3], xpath, )">testLogin(, CLICK, //button[3], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //button[@type=&#039;submit&#039;], xpath, )">testLogin(, CLICK, //button[@type='submit'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@name= &#039;userSelect&#039;], xpath, )">testLogin(, CLICK, //*[@name= 'userSelect'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //div[2]/div/div/button, xpath, )">testLogin(, CLICK, //div[2]/div/div/button, xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, SETTEXT, //*[@ng-model=&quot;startDate&quot;], xpath, 2021-02-23T15:57:00)">testLogin(, SETTEXT, //*[@ng-model="startDate"], xpath, 2021-02-23T15:57:00)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@class = &#039;btn btn-default&#039;], xpath, )">testLogin(, CLICK, //*[@class = 'btn btn-default'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //button[@type=&#039;submit&#039;], xpath, )">testLogin(, CLICK, //button[@type='submit'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@name= &#039;userSelect&#039;], xpath, )">testLogin(, CLICK, //*[@name= 'userSelect'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">testLogin(, CLICK, //*[@ng-class = 'btnClass2'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)">testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, WAITFORELEMENT, //strong, xpath, )">testLogin(, WAITFORELEMENT, //strong, xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)">testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, SETTEXT, //input[@type=&#039;number&#039;], xpath, 31459)">testLogin(, SETTEXT, //input[@type='number'], xpath, 31459)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@class=&#039;btn logout&#039;], xpath, )">testLogin(, CLICK, //*[@class='btn logout'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)">testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, VALIDATEANDCOMPARE, //*[text() = &#039;Amount to be Withdrawn :&#039;], xpath, Amount to be Deposited :)">testLogin(, VALIDATEANDCOMPARE, //*[text() = 'Amount to be Withdrawn :'], xpath, Amount to be Deposited :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@class=&#039;btn logout&#039;], xpath, )">testLogin(, CLICK, //*[@class='btn logout'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, SELECTVALUE, //*[@name= &#039;userSelect&#039;], xpath, Hermoine Granger)">testLogin(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, WAITFORELEMENT, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">testLogin(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(Validate the of 1500 Deposit Was successful, , , , )">testLogin(Validate the of 1500 Deposit Was successful, , , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)">testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, WAITFORELEMENT, //button[3], xpath, )">testLogin(, WAITFORELEMENT, //button[3], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, WAITFORELEMENT, //strong, xpath, )">testLogin(, WAITFORELEMENT, //strong, xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, WAITFORELEMENT, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">testLogin(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@class=&#039;btn btn-default&#039;], xpath, )">testLogin(, CLICK, //*[@class='btn btn-default'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, WAITFORELEMENT, //strong, xpath, )">testLogin(, WAITFORELEMENT, //strong, xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@class=&#039;btn logout&#039;], xpath, )">testLogin(, CLICK, //*[@class='btn logout'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[text()=&#039;Customer Login&#039;], xpath, )">testLogin(, CLICK, //*[text()='Customer Login'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, VALIDATEANDCOMPARE, //tr[@id=&#039;anchor0&#039;]/td[3], xpath, Debit)">testLogin(, VALIDATEANDCOMPARE, //tr[@id='anchor0']/td[3], xpath, Debit)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@ng-click=&#039;transactions()&#039;], xpath, )">testLogin(, CLICK, //*[@ng-click='transactions()'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, SELECTVALUE, //*[@name= &#039;userSelect&#039;], xpath, Hermoine Granger)">testLogin(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)">testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">testLogin(, CLICK, //*[@ng-class = 'btnClass2'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, WAITFORELEMENT, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">testLogin(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)">testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[text()=&#039;Customer Login&#039;], xpath, )">testLogin(, CLICK, //*[text()='Customer Login'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)">testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[text()=&#039;Customer Login&#039;], xpath, )">testLogin(, CLICK, //*[text()='Customer Login'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@name= &#039;userSelect&#039;], xpath, )">testLogin(, CLICK, //*[@name= 'userSelect'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(Validate the of 1500 Deposit Was successful, , , , )">testLogin(Validate the of 1500 Deposit Was successful, , , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, SETTEXT, //input[@type=&#039;number&#039;], xpath, 1500)">testLogin(, SETTEXT, //input[@type='number'], xpath, 1500)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(Validate the Transaction appears, , , , )">testLogin(Validate the Transaction appears, , , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //*[@class = &#039;btn btn-default&#039;], xpath, )">testLogin(, CLICK, //*[@class = 'btn btn-default'], xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, CLICK, //div[3]/button, xpath, )">testLogin(, CLICK, //div[3]/button, xpath, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.HybridExecuteTest" class="method navigator-link" hash-for-method="testLogin(, SELECTVALUE, //*[@name= &#039;userSelect&#039;], xpath, Hermoine Granger)">testLogin(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.HybridExecuteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, GETTEXT, //*[@id=&quot;anchor1&quot;], xpath, )">
+                  </a> <!-- testLogin(, GETTEXT, //*[@id="anchor1"], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, GETTEXT, //*[@id="anchor1"], xpath, )</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;anchor1&quot;]&quot;}
+  (Session info: chrome=88.0.4324.182)
+  (Driver info: chromedriver=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;DESKTOP-2JKDASI&apos;, ip: &apos;192.168.8.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64782}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir8084_1422187921}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=88.0.4324.182, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: ba9909e0fd9be0ac7378871dfa0659f1
+*** Element info: {Using=xpath, value=//*[@id=&quot;anchor1&quot;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at operation.UIOperation.perform(UIOperation.java:88)
+	at testCases.HybridExecuteTest.testLogin(HybridExecuteTest.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.HybridExecuteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@ng-class = 'btnClass2'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)">
+                  </a> <!-- testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, VALIDATEANDCOMPARE, //*[@ng-show = &#039;message&#039;], xpath, Transaction successful)">
+                  </a> <!-- testLogin(, VALIDATEANDCOMPARE, //*[@ng-show = 'message'], xpath, Transaction successful) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, VALIDATEANDCOMPARE, //*[@ng-show = 'message'], xpath, Transaction successful)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)">
+                  </a> <!-- testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //button[@type=&#039;submit&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //button[@type='submit'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //button[@type='submit'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, SETTEXT, //input[@type=&#039;number&#039;], xpath, 31459)">
+                  </a> <!-- testLogin(, SETTEXT, //input[@type='number'], xpath, 31459) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, SETTEXT, //input[@type='number'], xpath, 31459)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, SETTEXT, //input[@type=&#039;number&#039;], xpath, 1500)">
+                  </a> <!-- testLogin(, SETTEXT, //input[@type='number'], xpath, 1500) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, SETTEXT, //input[@type='number'], xpath, 1500)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@class = &#039;btn btn-default&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@class = 'btn btn-default'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@class = 'btn btn-default'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //button[3], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //button[3], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //button[3], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //button[@type=&#039;submit&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //button[@type='submit'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //button[@type='submit'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@name= &#039;userSelect&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@name= 'userSelect'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@name= 'userSelect'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //div[2]/div/div/button, xpath, )">
+                  </a> <!-- testLogin(, CLICK, //div[2]/div/div/button, xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //div[2]/div/div/button, xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, SETTEXT, //*[@ng-model=&quot;startDate&quot;], xpath, 2021-02-23T15:57:00)">
+                  </a> <!-- testLogin(, SETTEXT, //*[@ng-model="startDate"], xpath, 2021-02-23T15:57:00) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, SETTEXT, //*[@ng-model="startDate"], xpath, 2021-02-23T15:57:00)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@class = &#039;btn btn-default&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@class = 'btn btn-default'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@class = 'btn btn-default'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //button[@type=&#039;submit&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //button[@type='submit'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //button[@type='submit'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@name= &#039;userSelect&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@name= 'userSelect'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@name= 'userSelect'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@ng-class = 'btnClass2'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)">
+                  </a> <!-- testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, WAITFORELEMENT, //strong, xpath, )">
+                  </a> <!-- testLogin(, WAITFORELEMENT, //strong, xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, WAITFORELEMENT, //strong, xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)">
+                  </a> <!-- testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, SETTEXT, //input[@type=&#039;number&#039;], xpath, 31459)">
+                  </a> <!-- testLogin(, SETTEXT, //input[@type='number'], xpath, 31459) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, SETTEXT, //input[@type='number'], xpath, 31459)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@class=&#039;btn logout&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@class='btn logout'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@class='btn logout'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)">
+                  </a> <!-- testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, VALIDATEANDCOMPARE, //*[text() = &#039;Amount to be Withdrawn :&#039;], xpath, Amount to be Deposited :)">
+                  </a> <!-- testLogin(, VALIDATEANDCOMPARE, //*[text() = 'Amount to be Withdrawn :'], xpath, Amount to be Deposited :) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, VALIDATEANDCOMPARE, //*[text() = 'Amount to be Withdrawn :'], xpath, Amount to be Deposited :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@class=&#039;btn logout&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@class='btn logout'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@class='btn logout'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, SELECTVALUE, //*[@name= &#039;userSelect&#039;], xpath, Hermoine Granger)">
+                  </a> <!-- testLogin(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, WAITFORELEMENT, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">
+                  </a> <!-- testLogin(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(Validate the of 1500 Deposit Was successful, , , , )">
+                  </a> <!-- testLogin(Validate the of 1500 Deposit Was successful, , , , ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Validate the of 1500 Deposit Was successful, , , , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)">
+                  </a> <!-- testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, WAITFORELEMENT, //button[3], xpath, )">
+                  </a> <!-- testLogin(, WAITFORELEMENT, //button[3], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, WAITFORELEMENT, //button[3], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, WAITFORELEMENT, //strong, xpath, )">
+                  </a> <!-- testLogin(, WAITFORELEMENT, //strong, xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, WAITFORELEMENT, //strong, xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, WAITFORELEMENT, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">
+                  </a> <!-- testLogin(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@class=&#039;btn btn-default&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@class='btn btn-default'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@class='btn btn-default'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, WAITFORELEMENT, //strong, xpath, )">
+                  </a> <!-- testLogin(, WAITFORELEMENT, //strong, xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, WAITFORELEMENT, //strong, xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@class=&#039;btn logout&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@class='btn logout'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@class='btn logout'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[text()=&#039;Customer Login&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[text()='Customer Login'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[text()='Customer Login'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, VALIDATEANDCOMPARE, //tr[@id=&#039;anchor0&#039;]/td[3], xpath, Debit)">
+                  </a> <!-- testLogin(, VALIDATEANDCOMPARE, //tr[@id='anchor0']/td[3], xpath, Debit) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, VALIDATEANDCOMPARE, //tr[@id='anchor0']/td[3], xpath, Debit)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@ng-click=&#039;transactions()&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@ng-click='transactions()'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@ng-click='transactions()'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, SELECTVALUE, //*[@name= &#039;userSelect&#039;], xpath, Hermoine Granger)">
+                  </a> <!-- testLogin(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)">
+                  </a> <!-- testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@ng-class = 'btnClass2'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, WAITFORELEMENT, //*[@ng-class = &#039;btnClass2&#039;], xpath, )">
+                  </a> <!-- testLogin(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)">
+                  </a> <!-- testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[text()=&#039;Customer Login&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[text()='Customer Login'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[text()='Customer Login'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)">
+                  </a> <!-- testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[text()=&#039;Customer Login&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[text()='Customer Login'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[text()='Customer Login'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@name= &#039;userSelect&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@name= 'userSelect'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@name= 'userSelect'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(Validate the of 1500 Deposit Was successful, , , , )">
+                  </a> <!-- testLogin(Validate the of 1500 Deposit Was successful, , , , ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Validate the of 1500 Deposit Was successful, , , , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, SETTEXT, //input[@type=&#039;number&#039;], xpath, 1500)">
+                  </a> <!-- testLogin(, SETTEXT, //input[@type='number'], xpath, 1500) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, SETTEXT, //input[@type='number'], xpath, 1500)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(Validate the Transaction appears, , , , )">
+                  </a> <!-- testLogin(Validate the Transaction appears, , , , ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Validate the Transaction appears, , , , )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //*[@class = &#039;btn btn-default&#039;], xpath, )">
+                  </a> <!-- testLogin(, CLICK, //*[@class = 'btn btn-default'], xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //*[@class = 'btn btn-default'], xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, CLICK, //div[3]/button, xpath, )">
+                  </a> <!-- testLogin(, CLICK, //div[3]/button, xpath, ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, CLICK, //div[3]/button, xpath, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(, SELECTVALUE, //*[@name= &#039;userSelect&#039;], xpath, Hermoine Granger)">
+                  </a> <!-- testLogin(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1037719964\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;none&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.HybridExecuteTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(54);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'testCases.HybridExecuteTest')
+data.setCell(0, 3, 30057);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testLogin')
+data.setCell(1, 2, 'testCases.HybridExecuteTest')
+data.setCell(1, 3, 12835);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLogin')
+data.setCell(2, 2, 'testCases.HybridExecuteTest')
+data.setCell(2, 3, 10625);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogin')
+data.setCell(3, 2, 'testCases.HybridExecuteTest')
+data.setCell(3, 3, 9525);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLogin')
+data.setCell(4, 2, 'testCases.HybridExecuteTest')
+data.setCell(4, 3, 7106);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testLogin')
+data.setCell(5, 2, 'testCases.HybridExecuteTest')
+data.setCell(5, 3, 7046);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testLogin')
+data.setCell(6, 2, 'testCases.HybridExecuteTest')
+data.setCell(6, 3, 6792);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLogin')
+data.setCell(7, 2, 'testCases.HybridExecuteTest')
+data.setCell(7, 3, 3316);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testLogin')
+data.setCell(8, 2, 'testCases.HybridExecuteTest')
+data.setCell(8, 3, 2759);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testLogin')
+data.setCell(9, 2, 'testCases.HybridExecuteTest')
+data.setCell(9, 3, 2486);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testLogin')
+data.setCell(10, 2, 'testCases.HybridExecuteTest')
+data.setCell(10, 3, 1142);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testLogin')
+data.setCell(11, 2, 'testCases.HybridExecuteTest')
+data.setCell(11, 3, 924);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testLogin')
+data.setCell(12, 2, 'testCases.HybridExecuteTest')
+data.setCell(12, 3, 904);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testLogin')
+data.setCell(13, 2, 'testCases.HybridExecuteTest')
+data.setCell(13, 3, 900);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testLogin')
+data.setCell(14, 2, 'testCases.HybridExecuteTest')
+data.setCell(14, 3, 823);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testLogin')
+data.setCell(15, 2, 'testCases.HybridExecuteTest')
+data.setCell(15, 3, 802);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testLogin')
+data.setCell(16, 2, 'testCases.HybridExecuteTest')
+data.setCell(16, 3, 786);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testLogin')
+data.setCell(17, 2, 'testCases.HybridExecuteTest')
+data.setCell(17, 3, 750);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testLogin')
+data.setCell(18, 2, 'testCases.HybridExecuteTest')
+data.setCell(18, 3, 726);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testLogin')
+data.setCell(19, 2, 'testCases.HybridExecuteTest')
+data.setCell(19, 3, 691);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testLogin')
+data.setCell(20, 2, 'testCases.HybridExecuteTest')
+data.setCell(20, 3, 632);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testLogin')
+data.setCell(21, 2, 'testCases.HybridExecuteTest')
+data.setCell(21, 3, 617);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testLogin')
+data.setCell(22, 2, 'testCases.HybridExecuteTest')
+data.setCell(22, 3, 607);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testLogin')
+data.setCell(23, 2, 'testCases.HybridExecuteTest')
+data.setCell(23, 3, 573);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testLogin')
+data.setCell(24, 2, 'testCases.HybridExecuteTest')
+data.setCell(24, 3, 544);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testLogin')
+data.setCell(25, 2, 'testCases.HybridExecuteTest')
+data.setCell(25, 3, 468);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testLogin')
+data.setCell(26, 2, 'testCases.HybridExecuteTest')
+data.setCell(26, 3, 419);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testLogin')
+data.setCell(27, 2, 'testCases.HybridExecuteTest')
+data.setCell(27, 3, 411);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testLogin')
+data.setCell(28, 2, 'testCases.HybridExecuteTest')
+data.setCell(28, 3, 371);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testLogin')
+data.setCell(29, 2, 'testCases.HybridExecuteTest')
+data.setCell(29, 3, 368);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testLogin')
+data.setCell(30, 2, 'testCases.HybridExecuteTest')
+data.setCell(30, 3, 359);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testLogin')
+data.setCell(31, 2, 'testCases.HybridExecuteTest')
+data.setCell(31, 3, 356);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testLogin')
+data.setCell(32, 2, 'testCases.HybridExecuteTest')
+data.setCell(32, 3, 355);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testLogin')
+data.setCell(33, 2, 'testCases.HybridExecuteTest')
+data.setCell(33, 3, 351);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testLogin')
+data.setCell(34, 2, 'testCases.HybridExecuteTest')
+data.setCell(34, 3, 344);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testLogin')
+data.setCell(35, 2, 'testCases.HybridExecuteTest')
+data.setCell(35, 3, 343);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testLogin')
+data.setCell(36, 2, 'testCases.HybridExecuteTest')
+data.setCell(36, 3, 338);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testLogin')
+data.setCell(37, 2, 'testCases.HybridExecuteTest')
+data.setCell(37, 3, 327);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testLogin')
+data.setCell(38, 2, 'testCases.HybridExecuteTest')
+data.setCell(38, 3, 303);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testLogin')
+data.setCell(39, 2, 'testCases.HybridExecuteTest')
+data.setCell(39, 3, 292);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testLogin')
+data.setCell(40, 2, 'testCases.HybridExecuteTest')
+data.setCell(40, 3, 280);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testLogin')
+data.setCell(41, 2, 'testCases.HybridExecuteTest')
+data.setCell(41, 3, 243);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testLogin')
+data.setCell(42, 2, 'testCases.HybridExecuteTest')
+data.setCell(42, 3, 222);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testLogin')
+data.setCell(43, 2, 'testCases.HybridExecuteTest')
+data.setCell(43, 3, 221);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testLogin')
+data.setCell(44, 2, 'testCases.HybridExecuteTest')
+data.setCell(44, 3, 220);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testLogin')
+data.setCell(45, 2, 'testCases.HybridExecuteTest')
+data.setCell(45, 3, 212);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testLogin')
+data.setCell(46, 2, 'testCases.HybridExecuteTest')
+data.setCell(46, 3, 191);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testLogin')
+data.setCell(47, 2, 'testCases.HybridExecuteTest')
+data.setCell(47, 3, 186);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testLogin')
+data.setCell(48, 2, 'testCases.HybridExecuteTest')
+data.setCell(48, 3, 175);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testLogin')
+data.setCell(49, 2, 'testCases.HybridExecuteTest')
+data.setCell(49, 3, 168);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testLogin')
+data.setCell(50, 2, 'testCases.HybridExecuteTest')
+data.setCell(50, 3, 137);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testLogin')
+data.setCell(51, 2, 'testCases.HybridExecuteTest')
+data.setCell(51, 3, 117);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testLogin')
+data.setCell(52, 2, 'testCases.HybridExecuteTest')
+data.setCell(52, 3, 107);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testLogin')
+data.setCell(53, 2, 'testCases.HybridExecuteTest')
+data.setCell(53, 3, 93);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.HybridExecuteTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLogin(Validate the of 1500 Deposit Was successful, , , , )</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)</span>
+                <span class="method-start">10906 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[text()='Customer Login'], xpath, )</span>
+                <span class="method-start">17709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, WAITFORELEMENT, //strong, xpath, )</span>
+                <span class="method-start">18258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@name= 'userSelect'], xpath, )</span>
+                <span class="method-start">18454 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger)</span>
+                <span class="method-start">19374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //button[@type='submit'], xpath, )</span>
+                <span class="method-start">19800 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                <span class="method-start">20595 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                <span class="method-start">21325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)</span>
+                <span class="method-start">21562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, SETTEXT, //input[@type='number'], xpath, 1500)</span>
+                <span class="method-start">22291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@class = 'btn btn-default'], xpath, )</span>
+                <span class="method-start">22648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)</span>
+                <span class="method-start">23445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@class='btn logout'], xpath, )</span>
+                <span class="method-start">23701 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(Validate the of 1500 Deposit Was successful, , , , )</span>
+                <span class="method-start">24342 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)</span>
+                <span class="method-start">31458 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[text()='Customer Login'], xpath, )</span>
+                <span class="method-start">41026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, WAITFORELEMENT, //strong, xpath, )</span>
+                <span class="method-start">41606 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@name= 'userSelect'], xpath, )</span>
+                <span class="method-start">41832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger)</span>
+                <span class="method-start">44330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //button[@type='submit'], xpath, )</span>
+                <span class="method-start">44943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                <span class="method-start">45263 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                <span class="method-start">46170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)</span>
+                <span class="method-start">46429 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, SETTEXT, //input[@type='number'], xpath, 1500)</span>
+                <span class="method-start">49191 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@class = 'btn btn-default'], xpath, )</span>
+                <span class="method-start">49539 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)</span>
+                <span class="method-start">49960 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@class='btn logout'], xpath, )</span>
+                <span class="method-start">50072 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(Validate the Transaction appears, , , , )</span>
+                <span class="method-start">50430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, GOTOURL, , , http://www.way2automation.com/angularjs-protractor/banking/#/login)</span>
+                <span class="method-start">57480 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[text()='Customer Login'], xpath, )</span>
+                <span class="method-start">70337 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, WAITFORELEMENT, //strong, xpath, )</span>
+                <span class="method-start">71483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@name= 'userSelect'], xpath, )</span>
+                <span class="method-start">71659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, SELECTVALUE, //*[@name= 'userSelect'], xpath, Hermoine Granger)</span>
+                <span class="method-start">72465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //button[@type='submit'], xpath, )</span>
+                <span class="method-start">72829 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, WAITFORELEMENT, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                <span class="method-start">73247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@ng-class = 'btnClass2'], xpath, )</span>
+                <span class="method-start">74203 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, VALIDATEANDCOMPARE, //label, xpath, Amount to be Deposited :)</span>
+                <span class="method-start">74383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, SETTEXT, //input[@type='number'], xpath, 31459)</span>
+                <span class="method-start">75210 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@class = 'btn btn-default'], xpath, )</span>
+                <span class="method-start">75687 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, VALIDATEANDCOMPARE, //div[4]/div/span, xpath, Deposit Successful)</span>
+                <span class="method-start">76050 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //div[3]/button, xpath, )</span>
+                <span class="method-start">76172 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, VALIDATEANDCOMPARE, //tr[@id='anchor0']/td[3], xpath, Debit)</span>
+                <span class="method-start">76456 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //div[2]/div/div/button, xpath, )</span>
+                <span class="method-start">79775 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, WAITFORELEMENT, //button[3], xpath, )</span>
+                <span class="method-start">80002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //button[3], xpath, )</span>
+                <span class="method-start">80149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, VALIDATEANDCOMPARE, //*[text() = 'Amount to be Withdrawn :'], xpath, Amount to be Deposited :)</span>
+                <span class="method-start">80343 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, SETTEXT, //input[@type='number'], xpath, 31459)</span>
+                <span class="method-start">80714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@class='btn btn-default'], xpath, )</span>
+                <span class="method-start">81010 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, VALIDATEANDCOMPARE, //*[@ng-show = 'message'], xpath, Transaction successful)</span>
+                <span class="method-start">81368 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@ng-click='transactions()'], xpath, )</span>
+                <span class="method-start">81465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, SETTEXT, //*[@ng-model="startDate"], xpath, 2021-02-23T15:57:00)</span>
+                <span class="method-start">81833 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(, GETTEXT, //*[@id="anchor1"], xpath, )</span>
+                <span class="method-start">82474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(, CLICK, //*[@class='btn logout'], xpath, )</span>
+                <span class="method-start">112551 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
